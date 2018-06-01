@@ -1,0 +1,33 @@
+postfix邮件服务           主配置/etc/postfix/main.cf                 包名:  postfix              服务名： postfix
+
+ftp                   共享路径：/var/ftp                          包名:  vsftpd               服务名：  vsftpd
+
+mariadb数据库             主配置/etc/my.cnf                          包名:  mariadb-server       服务名：  mariadb
+
+samba                 主配置/etc/samba/smb.conf                  包名:   samba               服务名：  smb
+
+iscsi                 客户端配置/etc/iscsi/initiatorname.iscsi    包名:  targetcli（服务端） iscsi-initiator-utils（客户端）   服务名： target（服务端）iscsid（客户端刷新）  iscsi（客户端服务）
+
+nfs                   主配置/etc/exports                          包名:  nfs-utils(客户端安装)  服务名： nfs-server
+
+selinux               主配置/etc/selinux/config                    
+
+chrony时间同步            主配置/etc/chrony.conf                      包名:  chrony              服务名：  chronyd
+
+dns                   主配置 /etc/named.conf   地址库文件 /var/named/*.zone                   包名:     bind,  bind-chroot          服务名：  named
+ 
+autofs                主配置 /etc/auto.master （配置策略文件）  策略文件地址  /etc/*.rule        包名:   autofs                        服务名： autofs        
+
+dhcp                  主配置/etc/dhcp/dhcpd.conf                  包名:    dhcp              服务名： dhcpd
+
+LDAP                                                             包名:    sssd   authconfig-gtk                 服务名:  sssd  
+
+tftp                 共享路径：/var/lib/tftpboot                   包名:   tftp-server        服务名：  tftp       
+
+httpd                主配置/etc/httpd/conf/httpd.conf  用户自定义/etc/httpd/conf.d/*.conf    包名:  httpd           服务名： httpd    
+
+https                主配置/etc/httpd/conf.d/ssl.conf             包名: mod_ssl             服务名： httpd             证书路径： /etc/pki/tls/certs/     密钥路径：/etc/pki/tls/private/
+
+
+
+
